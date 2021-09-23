@@ -1,0 +1,531 @@
+@charset "UTF-8";
+body {
+  font-family: heisei-maru-gothic-std, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8px auto;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.header .site-title {
+  font-size: 22px;
+  color: #81A238;
+  font-weight: 800;
+  margin-left: 15px;
+  margin-top: 8px;
+}
+
+.header .site-title > p {
+  margin: 0%;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header__li {
+  font-size: 10px;
+}
+
+.header__li > a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.header__li :nth-child(0) {
+  margin-right: 10px;
+}
+
+.header__li :nth-child(1) {
+  margin-right: 27px;
+}
+
+.category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.category__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 198px;
+  height: 23px;
+  background-color: #ACA2A2;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 6px;
+  margin-left: 6px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.category__item > p {
+  margin: 0;
+}
+
+.picture-book {
+  position: relative;
+}
+
+.picture-book__inner {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  background-color: #F1EDED;
+  -ms-grid-rows: 130px 130px 130px 130px;
+      grid-template-rows: 130px 130px 130px 130px;
+  -ms-grid-columns: 130px 130px 130px;
+      grid-template-columns: 130px 130px 130px;
+  -webkit-column-gap: 6px;
+          column-gap: 6px;
+  row-gap: 6px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 6px;
+  padding-bottom: 28px;
+}
+
+.picture-book__inner > div {
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+}
+
+.picture-book__inner :nth-child(1) {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-image: url("../../image/mejiro_01.jpg");
+}
+
+.picture-book__inner :nth-child(2) {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  background-image: url("../../image/kibitaki.jpg");
+}
+
+.picture-book__inner :nth-child(3) {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  background-image: url("../../image/suzume.jpg");
+}
+
+.picture-book__inner :nth-child(4) {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  text-align: center;
+  font-family: toppan-bunkyu-mincho-pr6n, serif;
+  font-weight: 600;
+}
+
+.picture-book__inner :nth-child(4) > p {
+  line-height: 48px;
+  font-size: 48px;
+}
+
+.picture-book__inner :nth-child(4) > p > span {
+  line-height: 0px;
+  font-size: 26px;
+}
+
+.picture-book__inner :nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  background-image: url("../../image/kogera.jpg");
+}
+
+.picture-book__inner :nth-child(7) {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-image: url("../../image/hayabusa.jpg");
+}
+
+.picture-book__inner :nth-child(8) {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  background-image: url("../../image/tobi.jpg");
+}
+
+.picture-book__inner :nth-child(9) {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-image: url("../../image/mukudori.jpg");
+}
+
+.picture-book__inner :nth-child(10) {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  background-image: url("../../image/tsubame.jpg");
+}
+
+.picture-book__inner :nth-child(11) {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  background-image: url("../../image/onaga.jpg");
+}
+
+.picture-book .next-page {
+  font-size: 12px;
+  color: #7B7B7B;
+  position: relative;
+  margin: 0;
+  bottom: 24px;
+  left: 340px;
+}
+
+.witness-info {
+  position: relative;
+}
+
+.witness-info__inner {
+  margin: 0 30px;
+}
+
+.witness-info__title {
+  font-size: 19px;
+  font-weight: 800;
+  color: #6C4B4B;
+  margin-bottom: 10px;
+}
+
+.witness-info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 2px solid #747474;
+  padding-top: 12px;
+  color: #747474;
+}
+
+.witness-info__item .witness-title {
+  text-align: center;
+}
+
+.witness-info__item .witness-title .witness-date {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 11px;
+}
+
+.witness-info__item .witness-title .witness-bird {
+  width: 103px;
+  height: 21px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #ACA2A2;
+  padding: 3px 0;
+}
+
+.witness-info__item .witness-content {
+  width: 231px;
+  font-size: 11px;
+}
+
+.witness-info__item .witness-content .more-page {
+  font-size: 12px;
+  text-align: right;
+}
+
+.guidance {
+  position: relative;
+  background-color: #EAE8E8;
+  padding: 20px 30px;
+}
+
+.guidance__title {
+  font-size: 19px;
+  font-weight: 800;
+  color: #6C4B4B;
+  margin-bottom: 10px;
+}
+
+.guidance__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #747474;
+  margin-bottom: 36px;
+}
+
+.guidance__info {
+  width: 188px;
+}
+
+.guidance__info > p {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.guidance__info .content {
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.guidance__info .more-page {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: right;
+}
+
+.guidance__item::nth-last-child() {
+  margin-bottom: 0;
+}
+
+.guidance__img {
+  width: 136px;
+  height: 103px;
+  background-size: cover;
+  background-position: center;
+}
+
+.record {
+  position: relative;
+  background-color: #EAE8E8;
+  padding: 20px 30px;
+  margin-top: 25px;
+}
+
+.record__title {
+  font-size: 19px;
+  font-weight: 800;
+  color: #6C4B4B;
+  margin-bottom: 10px;
+}
+
+.record__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #747474;
+  margin-bottom: 36px;
+}
+
+.record__info {
+  width: 218px;
+}
+
+.record__info > p {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.record__info .content {
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.record__info .more-page {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: right;
+}
+
+.record__item:nth-last-child() {
+  margin-bottom: 0;
+}
+
+.record__img {
+  width: 113px;
+  height: 113px;
+  background-size: cover;
+  background-position: center;
+}
+
+.page-up {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/PageUp.png");
+  margin: 0 auto;
+}
+
+.sns-share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 48px;
+}
+
+.sns-share > div {
+  width: 52px;
+  height: 52px;
+  background-size: cover;
+  background-position: center;
+}
+
+.sns-share .fb {
+  background-image: url("/image/C_sns_1.gif");
+}
+
+.sns-share .twitter {
+  background-image: url("/image/C_sns_2.gif");
+}
+
+.sns-share .line {
+  background-image: url("/image/C_sns_3.gif");
+}
+
+.sns-share .google {
+  background-image: url("/image/C_sns_4.gif");
+}
+
+.footer__menu .acd-check {
+  display: none;
+}
+
+.footer__menu .acd-label {
+  background: #A3A1A1;
+  color: #fff;
+  display: block;
+  margin-bottom: 1px;
+  padding: 10px 40px;
+  position: relative;
+}
+
+.footer__menu .acd-label::after {
+  background: transparent;
+  content: '+';
+  display: block;
+  height: 52px;
+  padding: 10px 20px;
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
+.footer__menu .acd-content {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  visibility: hidden;
+}
+
+.footer__menu .acd-content ul {
+  list-style: none;
+  padding-left: 30px;
+}
+
+.footer__menu .acd-content a {
+  text-decoration: none;
+  color: #504F4F;
+}
+
+.footer__menu .acd-check:checked + .acd-label:after {
+  content: '-';
+}
+
+.footer__menu .acd-check:checked + .acd-label + .acd-content {
+  height: 200px;
+  opacity: 1;
+  padding: 10px;
+  visibility: visible;
+}
+
+@media (min-width: 600px) {
+  /******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+}
+
+@media (min-width: 1280px) {
+  /******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+}
+/*# sourceMappingURL=style.css.map */
