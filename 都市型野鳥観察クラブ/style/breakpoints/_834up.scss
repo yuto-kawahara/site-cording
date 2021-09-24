@@ -1,0 +1,53 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+.category {
+  &__item {
+    width: 270px;
+    height: 27px;
+  }
+}
+
+.picture-book {
+  & .zukan1 {
+    display: block;
+  }
+  & .zukan2 {
+    display: block;
+  }
+  &__inner2 {
+    padding-left: 0;
+  }
+  & .next-page {
+    display: none;
+  }
+  & .back-page {
+    display: none;
+  }
+}
+
+.infomation {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+
+  & .guidance {
+    padding: 0;
+    background-color: #fff;
+  }
+}
+
+.record {
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.page-up {
+  display: none;
+}
+
+.sns-share {
+  padding: 0 200px;
+}

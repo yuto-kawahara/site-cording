@@ -6,7 +6,9 @@ img {
   max-width: 100%;
   vertical-align: bottom;
 }
-
+#container {
+  overflow: hidden;
+}
 .header {
   position: relative;
   top: 0;
@@ -84,6 +86,14 @@ img {
 
 .picture-book {
   position: relative;
+  display: flex;
+
+  & .zukan1 {
+    display: none;
+  }
+  // & .appear {
+  //   display: block;
+  // }
   &__inner {
     position: relative;
     display: grid;
@@ -95,17 +105,72 @@ img {
     justify-content: center;
     padding-top: 6px;
     padding-bottom: 28px;
+    padding-left: 6px;
+    padding-right: 6px;
 
     & > div {
       background-size: cover;
       background-position: center;
       background-color: #fff;
     }
+
+    & a {
+      text-decoration: none;
+    }
+
     
     & :nth-child(1) {
+      position: relative;
       grid-row: 1;
       grid-column: 1;
       background-image: url("../../image/mejiro_01.jpg");
+      & .cover {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: all 0.8s ease;
+        background: rgba(131, 158, 246, 0.5);
+      } 
+      & .content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(131, 158, 246, 0.5);
+        text-align: center;
+        color: #fff;
+        & p {
+          font-family: toppan-bunkyu-mincho-pr6n, serif;
+          background: transparent;
+          margin: 0 auto;
+        }
+        & .bird-ja {
+          margin-top: 10px;
+          font-weight: 600;
+          font-size: 26px;
+        }
+        & .bird-en {
+          font-size: 12px;
+        }
+        & .more-btn {
+          margin-top: 30px;
+          font-size: 18px;
+          border: 2px solid;
+          border-radius: 20px;
+          width: 76px;
+          height: 25px;
+          line-height:17px;
+        }
+      }
+      &:hover {
+        &.cover {
+          opacity: 1;
+        }
+      }
     }
     & :nth-child(2) {
       grid-row: 1;
@@ -164,6 +229,101 @@ img {
     }
   }
   & .next-page {
+    font-size: 12px;
+    color: #7B7B7B;
+    position: relative;
+    margin: 0;
+    bottom: 24px;
+    left: 340px;
+  }
+  & .zukan2 {
+    display: none;
+  }
+  & .appear {
+    display: block;
+  }
+  &__inner2 {
+    position: relative;
+    display: grid;
+    background-color: #F1EDED;
+    grid-template-rows: 130px 130px 130px 130px;
+    grid-template-columns: 130px 130px 130px;
+    column-gap: 6px;
+    row-gap: 6px;
+    justify-content: center;
+    padding-top: 6px;
+    padding-bottom: 34px;
+    padding-left: 6px;
+    padding-right: 6px;
+
+    & > div {
+      background-size: cover;
+      background-position: center;
+      background-color: #fff;
+    }
+
+    & :nth-child(1) {
+      grid-row: 1;
+      grid-column: 1;
+      background-image: url("../../image/sekirei.jpg");
+    }
+    & :nth-child(2) {
+      grid-row: 1;
+      grid-column: 2;
+      background-image: url("../../image/hiyodori.jpg");
+    }
+    & :nth-child(3) {
+      grid-row: 1;
+      grid-column: 3;
+      background-image: url("../../image/enaga.jpg");
+    }
+    & :nth-child(4) {
+      grid-row: 2;
+      grid-column: 1;
+      background-image: url("../../image/gojuukara.jpg");
+    }
+    & :nth-child(5) {
+      grid-row: 2;
+      grid-column: 2;
+      background-image: url("../../image/fukurou.jpg");
+    }
+    & :nth-child(6) {
+      grid-row: 2;
+      grid-column: 3;
+      background-image: url("../../image/hato.jpg");
+    }
+    & :nth-child(7) {
+      grid-row: 3;
+      grid-column: 1;
+      background-image: url("../../image/kawasemi.jpg");
+    }
+    & :nth-child(8) {
+      grid-row: 3;
+      grid-column: 2;
+      background-image: url("../../image/mozu.jpg");
+    }
+    & :nth-child(9) {
+      grid-row: 3;
+      grid-column: 3;
+      background-image: url("../../image/sagi.jpg");
+    }
+    & :nth-child(10) {
+      grid-row: 4;
+      grid-column: 1;
+      background-image: url("../../image/uguisu.jpg");
+    }
+    & :nth-child(11) {
+      grid-row: 4;
+      grid-column: 2;
+      background-image: url("../../image/taka.jpg");
+    }
+    & :nth-child(12) {
+      grid-row: 4;
+      grid-column: 3;
+      background-image: url("../../image/yosikiri.jpg");
+    }    
+  }
+  & .back-page {
     font-size: 12px;
     color: #7B7B7B;
     position: relative;
@@ -323,12 +483,14 @@ img {
   background-position: center;
   background-image: url("/image/PageUp.png");
   margin: 0 auto;
+  margin-top: 35px;
 }
 
 .sns-share {
   display: flex;
   justify-content:space-between;
   margin: 0 48px;
+  margin-top: 20px;
 
   & > div {
     width: 52px;
@@ -350,9 +512,8 @@ img {
   }
 }
 
-
-
 .footer {
+  margin-top: 20px;
   &__menu {
     
     & .acd-check{
@@ -400,6 +561,81 @@ img {
       opacity: 1;
       padding: 10px;
       visibility: visible;
+    }
+  }
+}
+
+.show {
+  
+  & p {
+    margin: 0;
+  }
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #6C4B4B;
+    padding: 20px 0;
+    margin-left: 20px;
+    & > p {
+      height: 22px;
+    }
+  }
+  &__img {
+    
+    & .main-img {
+      height: 276px;
+      background-size: cover;
+      background-position: center;  
+      background-image: url("/image/B_mejiro_02.jpg");
+    }
+    & .sub-img {
+      display: flex;
+      height: 134px;
+      margin-top: 5px;
+      & > div {
+        width: 134px;
+        background-size: cover;
+        background-position: center;  
+      }
+      & > :nth-child(1) {
+        background-image: url("/image/B_mejiro4.jpg");
+      }
+      & > :nth-child(2) {
+        background-image: url("/image/B_mejiro5.jpg");
+      }
+      & > :nth-child(3) {
+        background-image: url("/image/B_mejiro3.jpg");
+      }
+      & > :nth-child(even) {
+        margin: 0 5px;
+      }
+    }
+  }
+  &__content{
+    margin: 0 30px;
+    margin-top: 30px;
+    & .main-content {
+      font-size: 12px;
+      border: 1px solid;
+      border-radius: 20px;
+      padding: 18px 30px;
+      margin-bottom: 20px;
+    }
+    
+    & .sub-content {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+  }
+  & .back-page {
+    text-align: center;
+    
+    & > p {
+      border: 1px solid;
+      border-radius: 30px;  
+      width: 97px;
+      height: 25px;
+      margin-left: auto;
     }
   }
 }

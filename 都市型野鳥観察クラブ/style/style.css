@@ -8,6 +8,10 @@ img {
   vertical-align: bottom;
 }
 
+#container {
+  overflow: hidden;
+}
+
 .header {
   position: relative;
   top: 0;
@@ -115,6 +119,13 @@ img {
 
 .picture-book {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.picture-book .zukan1 {
+  display: none;
 }
 
 .picture-book__inner {
@@ -134,6 +145,8 @@ img {
           justify-content: center;
   padding-top: 6px;
   padding-bottom: 28px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .picture-book__inner > div {
@@ -142,12 +155,70 @@ img {
   background-color: #fff;
 }
 
+.picture-book__inner a {
+  text-decoration: none;
+}
+
 .picture-book__inner :nth-child(1) {
+  position: relative;
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 1;
   grid-column: 1;
   background-image: url("../../image/mejiro_01.jpg");
+}
+
+.picture-book__inner :nth-child(1) .cover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  background: rgba(131, 158, 246, 0.5);
+}
+
+.picture-book__inner :nth-child(1) .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(131, 158, 246, 0.5);
+  text-align: center;
+  color: #fff;
+}
+
+.picture-book__inner :nth-child(1) .content p {
+  font-family: toppan-bunkyu-mincho-pr6n, serif;
+  background: transparent;
+  margin: 0 auto;
+}
+
+.picture-book__inner :nth-child(1) .content .bird-ja {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.picture-book__inner :nth-child(1) .content .bird-en {
+  font-size: 12px;
+}
+
+.picture-book__inner :nth-child(1) .content .more-btn {
+  margin-top: 30px;
+  font-size: 18px;
+  border: 2px solid;
+  border-radius: 20px;
+  width: 76px;
+  height: 25px;
+  line-height: 17px;
+}
+
+.picture-book__inner :nth-child(1):hover.cover {
+  opacity: 1;
 }
 
 .picture-book__inner :nth-child(2) {
@@ -237,6 +308,146 @@ img {
 }
 
 .picture-book .next-page {
+  font-size: 12px;
+  color: #7B7B7B;
+  position: relative;
+  margin: 0;
+  bottom: 24px;
+  left: 340px;
+}
+
+.picture-book .zukan2 {
+  display: none;
+}
+
+.picture-book .appear {
+  display: block;
+}
+
+.picture-book__inner2 {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  background-color: #F1EDED;
+  -ms-grid-rows: 130px 130px 130px 130px;
+      grid-template-rows: 130px 130px 130px 130px;
+  -ms-grid-columns: 130px 130px 130px;
+      grid-template-columns: 130px 130px 130px;
+  -webkit-column-gap: 6px;
+          column-gap: 6px;
+  row-gap: 6px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 6px;
+  padding-bottom: 34px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.picture-book__inner2 > div {
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+}
+
+.picture-book__inner2 :nth-child(1) {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-image: url("../../image/sekirei.jpg");
+}
+
+.picture-book__inner2 :nth-child(2) {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  background-image: url("../../image/hiyodori.jpg");
+}
+
+.picture-book__inner2 :nth-child(3) {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  background-image: url("../../image/enaga.jpg");
+}
+
+.picture-book__inner2 :nth-child(4) {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-image: url("../../image/gojuukara.jpg");
+}
+
+.picture-book__inner2 :nth-child(5) {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  background-image: url("../../image/fukurou.jpg");
+}
+
+.picture-book__inner2 :nth-child(6) {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  background-image: url("../../image/hato.jpg");
+}
+
+.picture-book__inner2 :nth-child(7) {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-image: url("../../image/kawasemi.jpg");
+}
+
+.picture-book__inner2 :nth-child(8) {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  background-image: url("../../image/mozu.jpg");
+}
+
+.picture-book__inner2 :nth-child(9) {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  background-image: url("../../image/sagi.jpg");
+}
+
+.picture-book__inner2 :nth-child(10) {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-image: url("../../image/uguisu.jpg");
+}
+
+.picture-book__inner2 :nth-child(11) {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  background-image: url("../../image/taka.jpg");
+}
+
+.picture-book__inner2 :nth-child(12) {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  background-image: url("../../image/yosikiri.jpg");
+}
+
+.picture-book .back-page {
   font-size: 12px;
   color: #7B7B7B;
   position: relative;
@@ -424,6 +635,7 @@ img {
   background-position: center;
   background-image: url("/image/PageUp.png");
   margin: 0 auto;
+  margin-top: 35px;
 }
 
 .sns-share {
@@ -434,6 +646,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 48px;
+  margin-top: 20px;
 }
 
 .sns-share > div {
@@ -457,6 +670,10 @@ img {
 
 .sns-share .google {
   background-image: url("/image/C_sns_4.gif");
+}
+
+.footer {
+  margin-top: 20px;
 }
 
 .footer__menu .acd-check {
@@ -513,12 +730,137 @@ img {
   visibility: visible;
 }
 
-@media (min-width: 600px) {
+.show p {
+  margin: 0;
+}
+
+.show__title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #6C4B4B;
+  padding: 20px 0;
+  margin-left: 20px;
+}
+
+.show__title > p {
+  height: 22px;
+}
+
+.show__img .main-img {
+  height: 276px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/B_mejiro_02.jpg");
+}
+
+.show__img .sub-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 134px;
+  margin-top: 5px;
+}
+
+.show__img .sub-img > div {
+  width: 134px;
+  background-size: cover;
+  background-position: center;
+}
+
+.show__img .sub-img > :nth-child(1) {
+  background-image: url("/image/B_mejiro4.jpg");
+}
+
+.show__img .sub-img > :nth-child(2) {
+  background-image: url("/image/B_mejiro5.jpg");
+}
+
+.show__img .sub-img > :nth-child(3) {
+  background-image: url("/image/B_mejiro3.jpg");
+}
+
+.show__img .sub-img > :nth-child(even) {
+  margin: 0 5px;
+}
+
+.show__content {
+  margin: 0 30px;
+  margin-top: 30px;
+}
+
+.show__content .main-content {
+  font-size: 12px;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 18px 30px;
+  margin-bottom: 20px;
+}
+
+.show__content .sub-content {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.show .back-page {
+  text-align: center;
+}
+
+.show .back-page > p {
+  border: 1px solid;
+  border-radius: 30px;
+  width: 97px;
+  height: 25px;
+  margin-left: auto;
+}
+
+@media (min-width: 834px) {
   /******************************************************************
 
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
+  .category__item {
+    width: 270px;
+    height: 27px;
+  }
+  .picture-book .zukan1 {
+    display: block;
+  }
+  .picture-book .zukan2 {
+    display: block;
+  }
+  .picture-book__inner2 {
+    padding-left: 0;
+  }
+  .picture-book .next-page {
+    display: none;
+  }
+  .picture-book .back-page {
+    display: none;
+  }
+  .infomation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px 30px;
+  }
+  .infomation .guidance {
+    padding: 0;
+    background-color: #fff;
+  }
+  .record {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+  .page-up {
+    display: none;
+  }
+  .sns-share {
+    padding: 0 200px;
+  }
 }
 
 @media (min-width: 1280px) {
