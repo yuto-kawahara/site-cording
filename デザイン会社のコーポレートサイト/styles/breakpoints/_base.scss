@@ -8,6 +8,7 @@ img {
 }
 
 a {
+  color: #000;
   text-decoration: none !important; 
 }
 
@@ -34,6 +35,7 @@ li {
   color: #000;
   font-size: 16px;
   margin: 0 auto;
+  box-shadow: 0 0 6px #1b1310;    
 }
 .after-title {
   font-size: 25px;
@@ -167,9 +169,11 @@ main {
   position: relative;
   width: 100%;
   height: 1533px;
-  background-size: auto;
-  background-position: center;
+  background-size: cover;
+  background-position: center 0;
   background-image: url("../../images/works-bgi@2x.jpg");
+  background-repeat: no-repeat;
+
   &__inner {
     @extend .content-width;
     height: 100%;
