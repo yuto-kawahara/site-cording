@@ -1,0 +1,243 @@
+﻿body {
+  font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+  letter-spacing: .05em;
+  color: #000;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+.section-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 15px;
+}
+
+.section-inner {
+  padding: 50px 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  letter-spacing: .08em;
+}
+
+.section-caption {
+  font-size: 14px;
+  margin: 30px auto 30px;
+  line-height: 30px;
+  letter-spacing: .04em;
+}
+
+.link-btn {
+  display: block;
+  width: 160px;
+  line-height: 40px;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none !important;
+
+  &:hover{
+    color: #fff;
+  }
+}
+
+/* ---------------------------- */
+/* header
+/* ---------------------------- */
+.header {
+  padding: 19px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #282F35;
+    transform: translateX(100%);
+  }
+  &__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    height: 100%;
+  }
+  &__li {
+    margin-bottom: 30px;
+    & > a {
+      text-decoration:none;
+      color: #fff;
+    }
+  }
+}
+
+/* ---------------------------- */
+/* top-visual
+/* ---------------------------- */
+.top-visual {
+  width: 100%;
+  height: 100vh;
+  min-height: 580px;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.top-img {
+  width: 76.4%;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../images/kv-img.jpg");
+
+  &::after { 
+    position: absolute; 
+    content: '';
+    display: inline-block;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+  }
+}
+
+.main-copy {
+  position: absolute;
+  bottom: 230px;
+  right: 0;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0em;
+  & > p {
+    margin: 0;
+  }
+}
+.catchphrase {
+  font-size: 56px;
+  letter-spacing: .07em;
+  line-height: 50px;
+  margin-top: 15px;
+}
+
+/* ---------------------------- */
+/* About us
+/* ---------------------------- */
+.bg-wrapper-about {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../images/about-img.jpg");
+}
+
+.bg-inner-about {
+  max-width: 590px;
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+/* ---------------------------- */
+/* Works
+/* ---------------------------- */
+
+.works-img {
+  width: 100%;
+  height: 232px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../images/works-img.jpg");
+}
+
+/* ---------------------------- */
+/* Culture
+/* ---------------------------- */
+.culture-img {
+  height: 232px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../images/culture-img.jpg");
+} 
+
+.pc-flex {
+  width: 100%;
+  background-color: #F0F0F0;
+}
+
+.pc-flex-inner {
+  max-width: 1100px;
+}
+.pc-flex-wrapper {
+  max-width: 520px;
+}
+
+/* ---------------------------- */
+/* Topics
+/* ---------------------------- */
+.topics-list {
+  padding: 0;
+}
+
+.topics-item {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #CECECE ;
+}
+
+.date {
+  font-size: 10px;
+  color: #CECECE;
+  margin-bottom: 10px;
+}
+.caption {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* ---------------------------- */
+/* Contact
+/* ---------------------------- */
+.bg-wrapper-contact {
+  background-color: #F2F2F2;
+}
+
+.contact-img {
+  height: 232px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../images/contact-img.jpg");
+  margin-bottom: 30px;
+}
+
+/* ---------------------------- */
+/* footer
+/* ---------------------------- */
+.footer {
+  height: 50px;
+  color: #fff;
+  background-color: #525252;
+  text-align: center;
+  line-height: 1.6  rem;
+  padding: 10px 0;
+}
