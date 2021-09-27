@@ -1,0 +1,62 @@
+﻿.bg-head-about {
+  background-image: url("../../images/heading-img_about.jpg");
+}
+
+.ceo-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: 282px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../images/ceo-img.jpg");
+  z-index: 2;
+}
+.message-wrapper {
+  display: flex;
+  position: relative;
+  padding-top: 210px;
+}
+
+.message-inner {
+  width: 770px;
+  height: 756px;
+  margin-left: auto;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  background-color: #F0F0F0;
+  padding-top: 120px;
+}
+
+.company-info-list{
+  border-top: 1px solid #ddd;
+  margin-bottom: 40px;
+
+  & > div {
+    display: flex;
+    padding: 20px 0;
+    max-width: 800px;
+    margin-left: auto;
+    border-bottom: 1px solid #ddd;
+  }
+}
+.company-info-title{
+  font-weight: bold;
+  flex-basis: 142px;
+}
+
+.maps-outer{
+  position:relative;
+  width:100%;
+  height:0;
+  padding-top:32.7%;
+}
+.maps-outer iframe{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
