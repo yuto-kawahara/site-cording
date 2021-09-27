@@ -440,12 +440,85 @@ li {
   height: 100%;
 }
 
+.bg-head-contact {
+  background-image: url("../../images/heading-img_contact.jpg");
+}
+
+.contact-caution {
+  font-size: 12px;
+  padding: 4px 5px;
+  background-color: #000;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.contact-type {
+  padding: 0;
+}
+
+.contact-form-list > div {
+  margin-bottom: 40px;
+}
+
+.contact-form-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.contact-form-text {
+  width: 100%;
+}
+
+.privacy-policy__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.privacy-policy__content {
+  width: 100%;
+  height: 300px;
+  overflow: scroll;
+  padding: 25px;
+  border: 1px solid black;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.privacy-policy__item p {
+  margin-bottom: 25px;
+}
+
+.privacy-policy__check {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.btn-wrapper {
+  text-align: center;
+}
+
+.contact-btn {
+  width: 160px;
+  height: 36px;
+  font-size: 14px;
+  background-color: #000;
+  color: #fff;
+  margin: 0 auto;
+}
+
 @media (min-width: 720px) {
   .section-title {
     font-size: 32px;
   }
   .section-caption {
     font-size: 16px;
+  }
+  /* ---------------------------- */
+  /* About
+/* ---------------------------- */
+  .vision-wrapper {
+    max-width: 415px;
   }
   /* ---------------------------- */
   /* Works
@@ -467,6 +540,17 @@ li {
   }
   .caption {
     font-size: 14px;
+  }
+  /* ---------------------------- */
+  /* Contact
+/* ---------------------------- */
+  .contact-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .type-item {
+    margin-right: 60px;
   }
 }
 
